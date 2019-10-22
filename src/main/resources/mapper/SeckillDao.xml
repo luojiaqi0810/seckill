@@ -6,6 +6,7 @@
 
     <!-- 目的：为DAO接口方法提供sql语句配置 -->
 
+    <!-- 减库存，条件：在秒杀时间内，库存>0 -->
     <update id="reduceNumber">
         <!-- 具体sql -->
         update
