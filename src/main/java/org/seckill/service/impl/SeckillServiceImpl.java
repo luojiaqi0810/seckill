@@ -13,6 +13,8 @@ import org.seckill.exception.SeckillException;
 import org.seckill.service.SeckillService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
 import java.util.Date;
@@ -23,12 +25,16 @@ import java.util.List;
  * @Date 2019/10/22
  * @Time 17:20
  */
+//@Component @Service @Dao @Controller
+@Service
 public class SeckillServiceImpl implements SeckillService {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
+    @Autowired //@Resource @Inject
     private SeckillDao seckillDao;
 
+    @Autowired
     private SuccessKilledDao successKilledDao;
 
     private final String salt = "adsgfag5f4g653441t6q34t48()*&^%$%##$%#@";
