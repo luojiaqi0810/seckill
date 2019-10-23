@@ -24,6 +24,7 @@ public class SeckillExecution {
     //秒杀成功对象
     private SuccessKilled successKilled;
 
+    //秒杀成功
     public SeckillExecution(long seckillId, SeckillStatEnum statEnum, SuccessKilled successKilled) {
         this.seckillId = seckillId;
         this.state = statEnum.getState();
@@ -31,6 +32,7 @@ public class SeckillExecution {
         this.successKilled = successKilled;
     }
 
+    //秒杀失败
     public SeckillExecution(long seckillId, SeckillStatEnum statEnum) {
         this.seckillId = seckillId;
         this.state = statEnum.getState();
