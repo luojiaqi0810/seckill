@@ -68,9 +68,9 @@
 
 <!-- 使用CDN获取公共js http://www.bootcdn.cn -->
 <!-- jQuery cookie操作插件 -->
-<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="http://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <!-- jQuery countDown倒计时插件 -->
-<script src="https://cdn.bootcss.com/jquery-countdown/2.1.0/js/jquery.countdown.min.js"></script>
+<script src="http://cdn.bootcss.com/jquery.countdown/2.1.0/jquery.countdown.min.js"></script>
 
 <!-- 开始编写交互逻辑 -->
 <script src="/resources/script/seckill.js" type="text/javascript"></script>
