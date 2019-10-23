@@ -73,4 +73,15 @@
 
 <!-- 开始编写交互逻辑 -->
 <script src="/resources/script/seckill.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function () {
+        //使用EL表达式传入参数给js
+        seckill.detail.init({
+            seckillId: ${seckill.id},
+            startTime: ${seckill.startTime.time},//毫秒
+            endTime : ${seckill.endTime.time}
+        });
+
+    });
+</script>
 </html>
