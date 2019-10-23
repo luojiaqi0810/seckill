@@ -39,16 +39,16 @@
                             <td>${sk.name}</td>
                             <td>${sk.number}</td>
                             <td>
-                                <fmt.formatDate value="${startTime}" pattern="yyyy-MM-dd HH:mm:ss"/>
+                                <fmt:formatDate value="${sk.startTime}" pattern="yyyy-MM-dd HH:mm:ss"/>
                             </td>
                             <td>
-                                <fmt.formatDate value="${endTime}" pattern="yyyy-MM-dd HH:mm:ss"/>
+                                <fmt:formatDate value="${sk.endTime}" pattern="yyyy-MM-dd HH:mm:ss"/>
                             </td>
                             <td>
-                                <fmt.formatDate value="${createTime}" pattern="yyyy-MM-dd HH:mm:ss"/>
+                                <fmt:formatDate value="${sk.createTime}" pattern="yyyy-MM-dd HH:mm:ss"/>
                             </td>
                             <td>
-                                <a class="=btn btn-info" href="/seckill/${sk.seckillId}/detail" target="_blank">link</a>
+                                <a class="btn btn-info" href="/seckill/${sk.seckillId}/detail" target="_blank">link</a>
                             </td>
                         </tr>
                     </c:forEach>
