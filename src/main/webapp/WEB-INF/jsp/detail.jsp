@@ -29,11 +29,12 @@
             </h2>
         </div>
     </div>
+    <!-- 登陆弹出层，输入电话 -->
     <div id="killPhoneModal" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title ext-center">
+                    <h3 class="modal-title text-center">
                         <span class="glyphicon glyphicon-phone"></span>秒杀电话：
                     </h3>
                 </div>
@@ -41,7 +42,7 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-xs-8 col-xs-offset-2">
-                            <<input type="text" name="killPhone" id="killPhoneKey"
+                             <input type="text" name="killPhone" id="killPhoneKey"
                                     placeholder="填手机号" class="form-control"/>
                         </div>
                     </div>
@@ -77,7 +78,7 @@
     $(function () {
         //使用EL表达式传入参数给js
         seckill.detail.init({
-            seckillId: ${seckill.id},
+            seckillId: ${seckill.seckillId},
             startTime: ${seckill.startTime.time},//毫秒
             endTime : ${seckill.endTime.time}
         });
